@@ -98,7 +98,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         webView.load(URLRequest(url: url))
         secondVC.view.addSubview(webView)
         webView.frame = secondVC.view.bounds
-        present(secondVC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(secondVC, animated: true)
 
         
 //        let config = SFSafariViewController.Configuration()
